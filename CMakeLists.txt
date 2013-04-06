@@ -6,6 +6,12 @@ SET ( DRC_VERSION_MINOR "1" )
 
 SET ( CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" )
 
+# Boost
+OPTION ( Boost_USE_STATIC_LIBS "Link against Boost statically" ON )
+SET ( Boost_USE_MULTITHREADED OFF )
+SET ( Boost_USE_STATIC_RUNTIME OFF )
+FIND_PACKAGE ( Boost 1.53.0 REQUIRED program_options regex )
+
 # for version information
 FIND_PACKAGE ( Git REQUIRED )
 INCLUDE ( GetGitRevisionDescription )
