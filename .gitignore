@@ -1,0 +1,14 @@
+# cmake
+build/
+
+# kdevelop
+*.kdev4
+.kdev4/
+
+# sublime text
+*.sublime-project
+*.sublime-workspace
+
+# temporaries
+*~
+
